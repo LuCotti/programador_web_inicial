@@ -1,0 +1,200 @@
+/*______________ ESTILOS UNIVERSALES ______________*/
+
+@font-face {
+  font-family: 'lumanosimo';
+  src: url('./fuentes/Lumanosimo-Regular.ttf')
+  format('truetype')
+}
+
+html {
+  font-size: 10px;
+  font-family: 'lumanosimo';
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(#aaaaaa, #666666);
+  font-size: 2.5rem;
+}
+
+/*_____________________ HEADER _____________________*/
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  background-color: #777777;
+  border: 5px double #222222;
+}
+a {
+  text-decoration: none;
+  color: #0000cc;
+  font-size: 2.3rem;
+  cursor: grab;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 30%;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/*____________________ SECTIONS ____________________*/
+
+h2 {
+  background-color: #9999ff;
+  border: 3px solid #7777ff;
+  text-align: center;
+}
+
+img {
+  width: 40%;
+  border-radius: 30%;
+  box-shadow: 3rem 1rem 20px #222222;
+}
+
+#miembros div {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#discografia div {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.flex {
+  border-bottom: 1px solid #000000;
+}
+
+/*___________________ RESPONSIVE ___________________*/
+
+@media (min-width: 576px) {
+  input, textarea {
+    font-size: 5rem;
+  }
+  header img {
+    width: 100%;
+  }
+  .flex img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex {
+    display: flex;
+  }
+  .flex img {
+    width: 120%;
+    box-shadow: 1rem 3rem 20px #222222;
+  }
+  .fotos {
+    width: 30%;
+  }
+  .flex h3 {
+    margin-left: 10%;
+  }
+  .gente {
+    flex-grow: 0.8;
+  }
+  .meteora {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 2rem;
+  }
+  header img {
+    width: 40%;
+  }
+  .flex img {
+    box-shadow: 1rem 5rem 20px #222222;
+    width: 25rem;
+  }
+}
+
+/*_____________________ FOOTER _____________________*/
+
+.footer {
+  background-color: #111111;
+  border: 1rem solid #000000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.footer ul {
+  background-color: inherit;
+  border: none;
+  margin-right: 2rem;
+}
+
+.footer a {
+  color: #0088ff;
+}
+
+/*____________________ CONTACTO ____________________*/
+
+.flex_cont {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.flex_item {
+  margin: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: .2rem solid #000000;
+}
+
+input, textarea {
+  background-color: #555555;
+  font-family: 'lumanosimo';
+  border-width: .5rem;
+  border-style: outset;
+  border-radius: 40%;
+  padding: 1rem;
+  width: 30rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.nombre {
+  margin-left: 16%;
+}
+
+.apellido {
+  margin-left: 16%;
+}
+
+.correo {
+  margin-left: 18%;
+}
+
+.mensaje {
+  margin-top: 0;
+}
+
+#flex_item_last {
+  border: none;
+}
+
+textarea {
+  margin-left: 16%;
+  border-radius: 10%;
+  height: 5rem;
+}
+
+#submit {
+  margin-left: 32%;
+  cursor: pointer;
+}
+
+/*_______________ FIN DE LOS ESTILOS _______________*/
